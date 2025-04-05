@@ -1,0 +1,241 @@
+/* General Layout */
+.billing-statement-page {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    /* Changed for better contrast */
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Added subtle shadow */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+    margin: 0;
+}
+
+.org-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+
+}
+
+.search-button {
+    padding: 0 12px;
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 38px;
+    margin-top: 18px;
+
+    transition: background-color 0.3s ease;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification {
+    position: relative;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+.help {
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.profile {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.date-input-section {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.date-input label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.date-input input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+
+    transition: border-color 0.2s ease;
+    width: 180px;
+}
+
+.date-input input:focus {
+    border-color: #007bff;
+
+    outline: none;
+    background-color: #ffffff;
+
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Section */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.close-popup-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup-button:hover {
+    background-color: #b52a36;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .date-input-section {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+}

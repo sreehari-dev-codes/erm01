@@ -1,0 +1,258 @@
+.workstation-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Top Layer */
+.top-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.left-section .org-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section .breadcrumb {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-icon {
+    font-size: 20px;
+    color: #007bff;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+.question-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-icon img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.profile-icon span {
+    font-size: 14px;
+}
+
+/* Second Layer */
+.second-layer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.second-layer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.second-layer button:hover {
+    background-color: #0056b3;
+}
+.second-layer button svg {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Third Layer Inputs */
+.third-layer {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.inline-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-input label {
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.inline-input input {
+    
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Workstation List Table */
+.workstation-list {
+    padding: 20px;
+    flex: 1;
+}
+
+.workstation-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.workstation-list th,
+.workstation-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.workstation-list .no-record {
+    text-align: center;
+    color: red;
+}
+
+/* Label + Dropdown + Export (Same Line) */
+.list-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    gap: 20px;
+}
+
+.list-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.workstation-list-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Dropdown Styling */
+.status-dropdown {
+    position: relative;
+}
+
+.selected-status {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-caret {
+    margin-left: 8px;
+}
+
+.status-options {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+}
+
+.status-options li {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.status-options li:hover,
+.status-options .active-option {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Export Link */
+.list-right .export-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.list-right .export-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}

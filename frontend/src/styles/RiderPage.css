@@ -1,0 +1,260 @@
+/* General Layout */
+.rider-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Top Layer */
+.top-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6fffc;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.left-section .org-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section .breadcrumb {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-icon img {
+    height: 24px;
+}
+
+.message-icon .badge {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.question-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-icon .top-icon {
+    height: 16px;
+    margin-bottom: 2px;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-icon img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.profile-icon span {
+    font-size: 14px;
+}
+
+/* Second Layer */
+.second-layer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.second-layer button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.second-layer button:hover {
+    background-color: #0056b3;
+}
+
+/* Third Layer */
+.third-layer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.third-layer label {
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.dropdown input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.auto-refresh {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}
+
+/* Modal styles */
+.error-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    max-width: 300px;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 10000;
+}
+
+.modal-content h3 {
+    font-size: 16px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #888;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,230 @@
+    /* General Layout */
+    .yearly-page {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Top Layer */
+    .top-layer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 10px 20px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-section .logo {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .left-section .org-name {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .right-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right-section .breadcrumb {
+        font-size: 16px;
+        font-weight: bold;
+        color: #666;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .message-icon {
+        position: relative;
+        font-size: 18px;
+        color: #007bff;
+    }
+
+    .message-icon .badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .profile-icon img {
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    /* Second Layer */
+    .second-layer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .second-layer button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .second-layer button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Financial Year Section */
+    .financial-year-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .selected-year {
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .caret-icon {
+        margin-left: 5px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 150px;
+        background-color: white;
+        border: 1px solid #ddd;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+        border-radius: 5px;
+    }
+
+    .dropdown-menu li {
+        padding: 8px 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu li:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    /* Filter Section (NEWLY ADDED) */
+    .report-filter-section {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .report-filter-section h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .filter-controls {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .dropdown-control {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dropdown-control label {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .dropdown-control select {
+        padding: 6px 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    /* Report Section */
+    .report-section table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .report-section th,
+    .report-section td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .report-section th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    .export-section {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .export-link {
+        color: #007bff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .export-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Highlight Total Row */
+    .report-section table tr:last-child {
+        font-weight: bold;
+        background-color: #f0caca;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f4f4f4;
+        font-size: 12px;
+        border-top: 1px solid #ddd;
+        color: #333;
+    }
